@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    tools:context=".equalActivity">
+
+
+  <androidx.cardview.widget.CardView
+      app:layout_constraintTop_toTopOf="parent"
+      app:cardBackgroundColor="@color/white3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <ImageView
+              android:layout_marginTop="4dp"
+              android:layout_marginEnd="4dp"
+              android:layout_marginBottom="4dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_width="47dp"
+              android:layout_height="46dp"
+              android:src="@drawable/ic_baseline_search_24"
+              tools:ignore="MissingConstraints" />
+
+          <ImageView
+              android:layout_marginTop="4dp"
+              android:layout_marginEnd="4dp"
+              android:layout_marginBottom="4dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              android:layout_width="47dp"
+              android:layout_height="46dp"
+              android:src="@drawable/ic_baseline_local_fire_department_24"
+              tools:ignore="MissingConstraints" />
+
+          <ImageView
+              android:layout_marginTop="4dp"
+              android:layout_marginEnd="4dp"
+              android:layout_marginBottom="4dp"
+              app:layout_constraintStart_toStartOf="parent"
+              android:layout_width="47dp"
+              android:layout_height="46dp"
+              android:src="@drawable/ic_baseline_menu_24"
+              tools:ignore="MissingConstraints" />
+
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="@id/equalEditText4"
+        app:layout_constraintStart_toStartOf="@id/equalEditText4"
+        app:layout_constraintBottom_toTopOf="@id/equalEditText4"
+        android:text="Policies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:textSize="40dp"
+        android:background="@drawable/bg_edit1_user"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:hint="Policy"
+        android:id="@+id/equalEditText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/equalEditText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:textSize="40dp"
+        android:background="@drawable/bg_edit1_user"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:hint="Product Category"
+        android:id="@+id/equalEditText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/equalEditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:textSize="40dp"
+        android:background="@drawable/bg_edit1_user"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:hint="Origin Country"
+        android:id="@+id/equalEditText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/equalEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:textSize="40dp"
+        android:background="@drawable/bg_edit1_user"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:hint="Brand"
+        android:id="@+id/equalEditText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@id/equalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/equalText"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="80dp"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@id/equalButton"
+        app:layout_constraintStart_toStartOf="@id/equalButton"
+        app:layout_constraintBottom_toTopOf="@id/equalButton"
+        android:text="Current Policies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="110dp"
+        android:backgroundTint="@color/red"
+        android:text="Export as CSV"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        android:id="@+id/equalButton"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
