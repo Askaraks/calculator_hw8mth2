@@ -1,16 +1,14 @@
-package com.geektech.classwork52month;
+package com.geektech.geektech;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Outline;
 import android.os.Bundle;
-import android.system.StructTimespec;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.geektech.classwork52month.R;
+import com.geektech.geektech.R;
 
 public class MainActivity extends AppCompatActivity {
     private Button equal;

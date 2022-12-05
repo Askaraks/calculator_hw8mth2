@@ -1,4 +1,4 @@
-package com.geektech.classwork52month;
+package com.geektech.geektech;
 
 import androidx.appcompat.app.AppCompatActivity;
 
